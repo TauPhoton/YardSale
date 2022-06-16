@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Product Details</title>
+    <style>
+        :root {
+            --white: #ffffff;
+            --black: #000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 20px;
+            --lg: 24px;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            height: 100vh;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            margin: 16px;
+        }
+        .navbar img {
+            height: 26px;
+        }
+        .product-card {
+            height: 48vh;
+        }
+        .product-card img {
+            height: 100%;
+        }
+        .product-description {
+            margin: 0 16px 0 16px;
+        }
+        .product-description h1 {
+            font-size: var(--md);
+        }
+        .product-description p {
+            color: var(--very-light-pink);
+        }
+        .add-bttn {
+            display: flex;
+            justify-content: center;
+            height: 62px;
+            margin: 16px;
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+        }
+        .add-bttn input {
+            color: var(--white);
+            background-color: var(--hospital-green);
+            border: none;
+            font-size: var(--md);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav class="navbar">
+            <img src="./icons/icon_menu.svg" alt="menu">
+            <img src="./logos/logo_yard_sale.svg" alt="logo">
+            <img src="./icons/icon_shopping_cart_notification.svg" alt="shopping-cart">
+        </nav>
+        <div class="product-card">
+            <img src="https://images.pexels.com/photos/375892/pexels-photo-375892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="comics">
+        </div>
+        <div class="product-description">
+            <h1>$7,00</h1>
+            <p>Comics</p>
+            <p>Several vintage comics from DC and Marvel such as X-Men,
+                Batman, Superman, Spawn, among others
+            </p>
+        </div>
+        <div class="add-bttn">
+            <img src="./icons/bt_add_to_cart.svg" alt="add-cart">
+            <input type="submit" value="Add to cart">
+        </div>
+    </div>
+</body>
+</html>

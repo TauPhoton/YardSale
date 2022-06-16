@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <style>
+        :root {
+            --white: #ffffff;
+            --black: #000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 20px;
+            --lg: 24px;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 25px;
+            place-content: center;
+        }
+        .product-card {
+            width: 240px;
+        }
+        .product-card img {
+            width: 100%;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+        }
+        ,.product-info figure{
+            margin: 0;
+        }
+        .product-info figure img {
+            width: 35px;
+            height: 35px;
+        }
+        .product-info div p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        .product-info div p:nth-child(2){
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 0;
+            color: var(--very-light-pink);
+        }
+        @media (max-width: 640px) {
+            .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 140px);
+            gap: 5px;
+            }
+            .product-card {
+            width: 140px;
+            }
+            .product-card img {
+            width: 100%;
+            height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="card-container">
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/179959/pexels-photo-179959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="copas">
+                <div class="product-info">
+                    <div>
+                        <p>$15,00</p>
+                        <p>Copas cristal</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/375892/pexels-photo-375892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="comics">
+                <div class="product-info">
+                    <div>
+                        <p>$7,00</p>
+                        <p>Comics</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/1336873/pexels-photo-1336873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="sacos">
+                <div class="product-info">
+                    <div>
+                        <p>$8,00</p>
+                        <p>Sacos</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/2115426/pexels-photo-2115426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="libros">
+                <div class="product-info">
+                    <div>
+                        <p>$5,00</p>
+                        <p>Libros</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/1078958/pexels-photo-1078958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blusas">
+                <div class="product-info">
+                    <div>
+                        <p>$3,00</p>
+                        <p>Blusas</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/895849/pexels-photo-895849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="collares">
+                <div class="product-info">
+                    <div>
+                        <p>$2,50</p>
+                        <p>Collares</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/3822728/pexels-photo-3822728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="grabadora">
+                <div class="product-info">
+                    <div>
+                        <p>$35,00</p>
+                        <p>Grabadora</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/618491/pexels-photo-618491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="semillas">
+                <div class="product-info">
+                    <div>
+                        <p>$1,00</p>
+                        <p>Semillas</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/318820/pexels-photo-318820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="lingotes">
+                <div class="product-info">
+                    <div>
+                        <p>$150,00</p>
+                        <p>Lingotes de oro</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/716107/pexels-photo-716107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="platos">
+                <div class="product-info">
+                    <div>
+                        <p>$3,00</p>
+                        <p>Platos decorativos</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/4480453/pexels-photo-4480453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="herramientas">
+                <div class="product-info">
+                    <div>
+                        <p>$12,00</p>
+                        <p>Kit herramientas</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/1431117/pexels-photo-1431117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bicicleta">
+                <div class="product-info">
+                    <div>
+                        <p>$27,00</p>
+                        <p>Bicicleta</p>
+                    </div>>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/165236/pexels-photo-165236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="patineta">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Patineta</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/3663060/pexels-photo-3663060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="juguetes">
+                <div class="product-info">
+                    <div>
+                        <p>$8,00</p>
+                        <p>Dinosaurios de juguete</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/205926/pexels-photo-205926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="audifonos">
+                <div class="product-info">
+                    <div>
+                        <p>$73,00</p>
+                        <p>Audifonos</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

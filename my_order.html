@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>My order</title>
+    <style>
+        :root {
+            --white: #ffffff;
+            --black: #000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 20px;
+            --lg: 24px;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0px;
+        }
+        .order-container {
+            display: grid;
+            margin-right: 20px;
+            padding: 12px;
+        }
+        .order-total {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0 24px 0;
+            background: var(--text-input-field);
+            border-radius: 16px;
+        }
+        .summary {
+            margin: 0 0 0 22px;
+        }
+        .summary p:nth-child(1) {
+            margin: 20px 0 8px 0;
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        .summary p:nth-child(2) {
+            margin: 0 0 20px 0;
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+        }
+        .cost-total {
+            text-align: center;
+            margin: 20px 20px 0 0;
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        .item-container {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+        .item-individual {
+            display: flex;
+            justify-content: space-between;
+        }
+        .item-individual img {
+            height: 80px;
+            width: 80px;
+            border-radius: 20px;
+        }
+        .item-individual p:nth-child(2) {
+            color: var(--very-light-pink);
+        }
+    </style>
+</head>
+<body>
+    <div class="order-container">
+        <section class="order-total">
+            <div class="summary">
+                <p>04.25.2021</p>
+                <p>6 articles</p>
+            </div>
+            <p class="cost-total">$ 720.00</p>
+        </section>
+
+        <div class="item-container">
+            <div class="item-individual">
+                <img src="https://images.pexels.com/photos/375892/pexels-photo-375892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="comics">
+                <p>Comics</p>
+                <p>$ 7,00</p>
+            </div>
+            <div class="item-individual">
+                <img src="https://images.pexels.com/photos/1078958/pexels-photo-1078958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blusas">
+                <p>Blusas</p>
+                <p>$ 3,00</p>
+            </div>
+            <div class="item-individual">
+                <img src="https://images.pexels.com/photos/618491/pexels-photo-618491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="semillas">
+                <p>Semillas</p>
+                <p>$ 1,00</p>
+            </div>
+            <div class="item-individual">
+                <img src="https://images.pexels.com/photos/3663060/pexels-photo-3663060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="juguetes">
+                <p>Dinosaurios de juguete</p>
+                <p>$ 8,00</p>
+            </div>
+            <div class="item-individual">
+                <img src="https://images.pexels.com/photos/716107/pexels-photo-716107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="platos">
+                <p>Platos decorativos</p>
+                <p>$ 3,00</p>
+            </div>
+            <div class="item-individual">
+                <img src="https://images.pexels.com/photos/318820/pexels-photo-318820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="lingotes">
+                <p>Lingotes de oro</p>
+                <p>$ 150,00</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

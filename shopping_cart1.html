@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Shopping Cart</title>
+    <style>
+        :root {
+            --white: #ffffff;
+            --black: #000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 20px;
+            --lg: 24px;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            width: 50%;
+        }
+        nav :nth-child(2) {
+            position: relative;
+            right: 50%;
+        }
+        .card_container {
+            display: grid;
+            grid-template-columns: ;
+            grid-template-rows: repeat(auto-fill, 140px);
+            width: 100%;
+            gap: 24px;
+        }
+        .product_card {
+            display: flex;
+            place-items: center;
+            width: 100%;
+        }
+        .product_card img {
+            width: 140px;
+            height: 140px;
+            margin-right: 40px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .product_info {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .price_container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button_container {
+            width: 100%;
+        }
+        input {
+            width: 100%;
+            height: 80px;
+            font-size: var(--lg);
+            background-color: var(--hospital-green);
+            color: var(--white);
+            border: none;
+            border-radius: 14px;
+        }
+    </style>
+</head>
+<body>
+    <section class="main">
+        <nav class="navbar">
+            <img src="./icons/icon_menu.svg" alt="menu">
+            <p>Shopping cart</p>
+        </nav>
+        <form action="/" class="card_container">
+            <div class="product_card">
+                <img src="https://images.pexels.com/photos/1336873/pexels-photo-1336873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="sacos">
+                <div class="product_info">
+                    <p class="item">Sacos</p>
+                    <p class="ind_cost">$8,00</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <img src="https://images.pexels.com/photos/3822728/pexels-photo-3822728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="grabadora">
+                <div class="product_info">
+                    <p class="item">Grabadora</p>
+                    <p class="ind_cost">$35,00</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <img src="https://images.pexels.com/photos/716107/pexels-photo-716107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="platos">
+                <div class="product_info">
+                    <p class="item">Platos decorativos</p>
+                    <p class="ind_cost">$3,00</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <img src="https://images.pexels.com/photos/179959/pexels-photo-179959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="copas">
+                <div class="product_info">
+                    <p class="item">Copas de cristal</p>
+                    <p class="ind_cost">$15,00</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <img src="https://images.pexels.com/photos/375892/pexels-photo-375892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="comics">
+                <div class="product_info">
+                    <p class="item">Comics</p>
+                    <p class="ind_cost">$7,00</p>
+                </div>
+            </div>
+        </form>
+        <section class="price_container">
+            <p>Total</p>
+            <p>$68,00</p>
+        </section>
+        <div class="button_container">
+            <input type="submit" class="chkout-bttn" value="Checkout">
+        </div>
+    </section>
+</body>
+</html>
