@@ -21,121 +21,126 @@
         }
         body {
             font-family: 'Quicksand', sans-serif;
-            margin: 0%;
+            height: 100vh;
+            width: 100vw;
+            margin: 0
         }
-        .main {
+        main {
             display: flex;
             flex-direction: column;
-            place-items: center;
             justify-content: space-between;
-            height: 100vh;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        .logo-container {
-            margin-top: 100px;
-            margin-bottom: 12px;
-        }
-        .logo-container img {
-            width: 200px;
-        }
-        .form-container{
+            place-items: center;
+            height: 100%;
             width: 100%;
         }
-        .email-container {
-            margin: 20px 0 0 0;
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            place-items: center;
         }
-        .email-container p {
-            margin-bottom: 4px;
+        .form-container img {
+            height: 50px;
+            margin-top: 160px;
+            margin-bottom: 100px;
+        }
+        .form-container div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container p {
+            margin-left: 18px;
+            margin-right: 18px;
             font-size: var(--sm);
+            color: var(--black);
             font-weight: bold;
         }
-        .email-container input {
-            width: 100%;
-            height: 42px;
+        .form-container input {
+            margin-left: 18px;
+            margin-right: 18px;
+            height: 38px;
             background-color: var(--text-input-field);
-            border-radius: 8px;
-            border: none;
-        }
-        .password-container {
-            margin: 20px 0 20px 0;
-        }
-        .password-container p {
-            margin-bottom: 4px;
-            font-size: var(--sm);
-            font-weight: bold;
-        }
-        .password-container input {
-            width: 100%;
-            height: 42px;
-            background-color: var(--text-input-field);
-            border-radius: 8px;
-            border: none;
-        }
-        .login-container {
-            width: 100%;
-            margin-top: 20px;
-        }
-        .login-container input {
-            width: 100%;
-            height: 62px;
-            color: var(--white);
+            color: var(--very-light-pink);
             font-size: var(--md);
+            border: none;
+            border-radius: 6px;
+        }
+        .login {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .login input {
+            margin-top: 42px;
+            margin-left: 18px;
+            margin-right: 18px;
+            margin-bottom: 6px;
+            color: var(--hospital-green);
+            background-color: var(--white);
+            border: none;
+            font-size: var(--sm);
+            cursor: pointer;
+        }
+        .login input:nth-child(1) {
+            margin-top: 52px;
+            height: 66px;
+            color: var(--white);
             background-color: var(--hospital-green);
             border: none;
-            border-radius: 12px;
-        }
-        .forgot-container {
-            margin-bottom: 32px;
-            top: 2px;
-        }
-        .forgot-container input {
-            width: 100%;
-            color: var(--hospital-green);
-            font-size: var(--sm);
-            background-color: var(--white);
-            border: none;
-        }
-        .signup-container {
-            width: 100%;
-            margin: 60px 0 20px 0;
-        }
-        .signup-container input {
-            width: 100%;
-            height: 62px;
-            color: var(--hospital-green);
+            border-radius: 8px;
             font-size: var(--md);
+        }
+        .signup {
+            width: 100%;
+            display: flex;
+        }
+        .signup_button {
+            width: 100%;
+            height: 66px;
+            margin: 16px 16px 42px 10px;
+            color: var(--hospital-green);
             background-color: var(--white);
             border-color: var(--hospital-green);
-            border-style: solid;
-            border-radius: 12px;
+            border: solid;
+            border-width: 1px;
+            border-radius: 8px;
+            font-size: var(--md);
+        }
+        @media (min-width: 640px) {
+            .form-container {
+                width: 65%;
+            }
+            .form-container img {
+                width: 0%;
+                text-align: center;
+            }
+            .signup{
+                width: 65%;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="main">
-        <div class="logo-container">
-            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
-        </div>
+    <main>
         <div class="form-container">
-            <div class="email-container">
-                <p>Email address</p>
-                <input type="text" placeholder="camilayokoo@email.com">
+            <img src="./logos/logo_yard_sale.svg" alt="logo">
+            <div class="mail_container">
+                <p class="mail_label">Email address</p>
+                <input type="text" class="mail_input" placeholder="camilayokoo@gmail.com">
             </div>
-            <div class="password-container">
-                <p>Password</p>
-                <input type="text" placeholder="*************">
+            <div class="password_container">
+                <p class="password_label">Password</p>
+                <input type="text" class="password_input" placeholder="************">
             </div>
-            <div class="login-container">
-                <input type="submit" value="Log in">
-            </div>
-            <div class="forgot-container">
-                <input type="submit" value="Forgot my password">
+            <div class="login">
+                <input type="submit" class="login_button" value="Log in">
+                <input type="submit" class="forgot" value="Forgot my password">
             </div>
         </div>
-        <div class="signup-container">
-            <input type="submit" value="Sign up">
+        <div class="signup">
+            <input type="submit" class="signup_button" value="Sign up">
         </div>
-    </div>
+    </main>
 </body>
 </html>
